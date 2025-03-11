@@ -1,0 +1,22 @@
+{
+  "name": "flyerwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "WebArray",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "bootstrap-scss": "^5.2.2",
+    "gulp-rename": "^2.0.0",
+    "jquery": "^3.6.1"
+  }
+}

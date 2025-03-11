@@ -1,0 +1,100 @@
+@use "abstracts/colors" as *;
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url(../../Red_Hat_Display/RedHatDisplay-Regular.ttf) format('truetype');
+}
+
+
+/* ******************  CUSTOM BOOTSTRAP  ************** */
+$theme-colors: (
+    "white": $white,
+    "black": $black,
+    "light": $light,
+    "primary": $primary,
+    "dark-primary": $dark-primary,
+    "dark": $dark,
+    "yellow": $yellow,
+    "purple": $purple,
+    "light-primary": $light-primary,
+    "light-primary-gray": $light-primary-gray,
+    "light-dark": $light-dark,
+    "light-mint": $light-mint,
+    "light-purple": $light-purple,
+    "light-blue": $light-blue,
+    "dark-purple": $dark-purple,
+);
+
+
+$font-family-base: 'Red Hat Display', sans-serif;
+$font-size-base: 1.5rem;
+$body-bg: $white;
+$body-color: #635C7F;
+$font-weight-base: 400;
+
+$nav-link-font-weight: 500;
+
+$h1-font-size: $font-size-base * 3.25;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1;
+$h6-font-size: $font-size-base;
+
+$font-weight-light:           300;
+$font-weight-normal:          500;
+$font-weight-semibold:        700;
+$font-weight-bold:            900;
+
+/* $grid-breakpoints: (
+    xs: 0,
+    sm: 600px,
+    md: 780px,
+    lg: 1100px,
+    xl: 1200px,
+    xxl: 1400px,
+
+)!default;
+
+$container-max-widths: (
+    xs: 540px,
+    sm: 720px,
+    md: 720px,
+    lg: 938px,
+    xl: 1140px,
+    xxl: 1300px,
+)!default; */
+
+$modal-lg:                          930px; 
+
+$btn-line-height:             1;
+$btn-padding-y:               1rem;
+$btn-padding-x:               2rem;
+$btn-font-size:               1.3rem;
+$btn-font-weight:             700;
+$btn-border-radius:           .310rem;
+$btn-color:                  #453429;
+/* $btn-border-width:            .156rem; */
+
+
+$navbar-toggler-border-radius:      none;
+$navbar-toggler-focus-width:        none;
+$accordion-button-focus-border-color:     none;
+$accordion-button-focus-box-shadow:       none;
+
+$nav-link-color:               $white;
+$nav-link-font-size:           1.25rem;
+$navbar-dark-color:            $white;
+$navbar-dark-hover-color:      $yellow;
+
+$accordion-button-active-color:           $black;
+
+$accordion-border-color:                  none;
+$accordion-button-active-bg:              transparent;
+$accordion-body-padding-x:                0;
+$accordion-button-icon:         url('../images/icons/icon-plus.svg');
+$accordion-button-active-icon:  url('../images/icons/icon-minus.svg');
+
+
+// scss-docs-end accordion-variables
+@import "../../node_modules/bootstrap-scss/bootstrap.scss";
