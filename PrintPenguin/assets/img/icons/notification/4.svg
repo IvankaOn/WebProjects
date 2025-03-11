@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: red;
+      }
+    </style>
+  </defs>
+  <circle class="cls-2" cx="75" cy="75" r="75"/>
+  <path class="cls-1" d="m103.18,94.53h-13.07v16.93h-10.43v-16.93h-36.86v-8.96l32.64-50.68h14.65v50.68h13.07v8.96Zm-23.5-49.8l-26.66,40.84h26.66v-40.84Z"/>
+</svg>

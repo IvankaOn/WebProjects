@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 78 78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ebf4ff;
+      }
+
+      .cls-2 {
+        fill: url(#Gradient_bez_nazwy_11);
+      }
+
+      .cls-3 {
+        fill: url(#Gradient_bez_nazwy_20);
+      }
+
+      .cls-4 {
+        fill: url(#Gradient_bez_nazwy_23);
+      }
+
+      .cls-5 {
+        fill: url(#Gradient_bez_nazwy_10);
+      }
+    </style>
+    <linearGradient id="Gradient_bez_nazwy_23" data-name="Gradient bez nazwy 23" x1="13" y1="29.25" x2="78" y2="29.25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#edf5ff"/>
+      <stop offset="1" stop-color="#c7e9ff"/>
+    </linearGradient>
+    <linearGradient id="Gradient_bez_nazwy_20" data-name="Gradient bez nazwy 20" x1="22.75" y1="19.5" x2="35.75" y2="19.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffce47"/>
+      <stop offset="1" stop-color="#ff9356"/>
+    </linearGradient>
+    <linearGradient id="Gradient_bez_nazwy_10" data-name="Gradient bez nazwy 10" x1="19.37" y1="37.65" x2="78" y2="37.65" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6fa953"/>
+      <stop offset="1" stop-color="#43765a"/>
+    </linearGradient>
+    <linearGradient id="Gradient_bez_nazwy_11" data-name="Gradient bez nazwy 11" x1="13.03" y1="43.34" x2="58.69" y2="43.34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e4e08e"/>
+      <stop offset="1" stop-color="#6fa953"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="m20.31,60.13c-5.2,0-9.83-3.33-11.51-8.29l-.11-.37c-.4-1.31-.56-2.42-.56-3.52v-22.16L.24,52.1c-1.01,3.87,1.3,7.88,5.17,8.95l50.26,13.46c.63.16,1.25.24,1.87.24,3.24,0,6.19-2.15,7.02-5.31l2.93-9.31H20.31Z"/>
+  <path class="cls-4" d="m78,10.56v37.38c0,4.03-3.28,7.31-7.31,7.31H20.31c-.32,0-.65-.03-.94-.07-3.41-.42-6.08-3.22-6.34-6.66-.03-.2-.03-.39-.03-.58V10.56c0-4.03,3.28-7.31,7.31-7.31h50.38c4.03,0,7.31,3.28,7.31,7.31Z"/>
+  <path class="cls-3" d="m35.75,19.5c0,3.59-2.91,6.5-6.5,6.5s-6.5-2.91-6.5-6.5,2.91-6.5,6.5-6.5,6.5,2.91,6.5,6.5Z"/>
+  <path class="cls-5" d="m78,38.8v9.13c0,4.03-3.28,7.31-7.31,7.31H20.31c-.32,0-.65-.03-.94-.07L52.84,21.71c2.21-2.21,5.85-2.21,8.06,0l17.1,17.1Z"/>
+  <path class="cls-2" d="m58.69,55.25H20.31c-.32,0-.65-.03-.94-.07-3.41-.42-6.08-3.22-6.34-6.66l15.44-15.44c2.21-2.21,5.85-2.21,8.06,0l22.17,22.17Z"/>
+</svg>

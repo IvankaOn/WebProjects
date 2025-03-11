@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript Function Testing</title>
+	</head>
+	<body>
+		<h1>Javascript Function Testing</h1>
+		
+		<h2>API Module</h2>
+		<label for="api-endpoint">Endpoint:</label>
+		<input type="text" id="api-endpoint" placeholder="/products" value="/ivanna"><br><br>
+		<button onclick="testApiAsync()">Test API (Async)</button>
+		<button onclick="testApiSync()">Test API (Sync)</button><br><br>
+		<p id="api-result"></p>
+		
+		<h2>Cache Module</h2>
+		<label for="cache-key">Key:</label>
+		<input type="text" id="cache-key" placeholder="key1">
+		<label for="cache-value">Value:</label>
+		<input type="text" id="cache-value" placeholder="value1"><br><br>
+		<button onclick="testCache()">Set Cache</button>
+		<button onclick="getCache()">Get Cache</button><br><br>
+		<p id="cache-result"></p>
+		
+		<h2>Cookie Module</h2>
+		<label for="cookie-name">Name:</label>
+		<input type="text" id="cookie-name" placeholder="username">
+		<label for="cookie-value">Value:</label>
+		<input type="text" id="cookie-value" placeholder="johndoe"><br><br>
+		<button onclick="setCookie()">Set Cookie</button>
+		<button onclick="viewCookies()">View Cookies</button><br><br>
+		<p id="cookie-result"></p>
+		
+		
+		
+		<!-- Included scripts here -->
+		<script src="Log.js"></script>
+		<script src="API.js"></script>
+		<script src="Cache.js"></script>
+		<script src="Cookie.js"></script>
+		
+		<script>
+			// Test the API module with asynchronous requests
+			function testApiAsync() {
+				const endpoint = document.getElementById('api-endpoint').value;
+				API.get(endpoint)
+					.then(result => {
+						document.getElementById('api-result').innerHTML = `<b>API result (async):<\/b> ${JSON.stringify(result)}`;
+					})
+					.catch(error => {
+						console.error(error);
+					});
+			}
+			
+			// Test the API module with synchronous requests
+			function testApiSync() {
+				const endpoint = document.getElementById('api-endpoint').value;
+				const result = API.get(endpoint, {}, false);
+				document.getElementById('api-result').innerHTML = `<b>API result (sync):<\/b> ${JSON.stringify(result)}`;
+			}
+			
+			// Set a value in the cache
+			function testCache() {
+				const key = document.getElementById('cache-key').value;
+				const value = document.getElementById('cache-value').value;
+				Cache.set(key, value);
+				document.getElementById('cache-result').innerHTML = `<b>Set cache:<\/b> ${key}=${value}`;
+			}
+			
+			// Get a value from the cache
+			function getCache() {
+				const key = document.getElementById('cache-key').value;
+				const result = Cache.get(key);
+				document.getElementById('cache-result').innerHTML = `<b>Cache result:<\/b> ${result}`;
+			}
+			
+			// Set a cookie
+			function setCookie() {
+				const name = document.getElementById('cookie-name').value;
+				const value = document.getElementById('cookie-value').value;
+				Cookie.set(name, value, 3600);
+				document.getElementById('cookie-result').innerHTML = `<b>Set cookie:<\/b> ${name}=${value}`;
+			}
+			
+			// View all cookies
+			function viewCookies() {
+				const cookies = document.cookie.split(';').reduce((acc, cookie) => {
+					const [key, value] = cookie.split('=');
+					acc[key.trim()] = value.trim();
+				return acc;
+			}, {});
+			document.getElementById('cookie-result').innerHTML = `<b>Cookies:<\/b> ${JSON.stringify(cookies)}`;
+			}
+		</script>
+	</body>
+</html>
